@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: LightSteelBlue;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ATMapp.controllers.DepositOrWithdrawOrTransferController">
+   <children>
+      <Label alignment="CENTER" layoutX="136.0" layoutY="159.0" prefHeight="303.0" prefWidth="550.0" rotate="45.0" text="ATM" textFill="#2b804d72">
+         <font>
+            <Font name="System Italic" size="150.0" />
+         </font>
+         <effect>
+            <InnerShadow color="#ddbaba" />
+         </effect>
+      </Label>
+      <Button fx:id="depositBtn" layoutX="14.0" layoutY="335.0" mnemonicParsing="false" onAction="#handleDepositBtnOnAction" prefHeight="65.0" prefWidth="168.0" style="-fx-background-radius: 20;" text="Deposit" textFill="#426b9d" AnchorPane.bottomAnchor="200.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="418.0" AnchorPane.topAnchor="335.0">
+         <font>
+            <Font name="System Bold Italic" size="30.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="withdrawBtn" layoutX="418.0" layoutY="335.0" mnemonicParsing="false" onAction="#handleWithdrawBtnOnAction" style="-fx-background-radius: 20;" text="Withdraw" textFill="#426b9d" AnchorPane.bottomAnchor="200.0" AnchorPane.leftAnchor="418.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="335.0">
+         <font>
+            <Font name="System Bold Italic" size="30.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Label fx:id="accountLabel" alignment="CENTER" layoutX="26.0" layoutY="14.0" prefHeight="73.0" prefWidth="545.0" text="show account" AnchorPane.bottomAnchor="513.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="14.0">
+         <font>
+            <Font name="System Italic" size="50.0" />
+         </font></Label>
+      <ImageView fx:id="backToSample" fitHeight="65.0" fitWidth="73.0" layoutX="14.0" layoutY="521.0" onMouseClicked="#handelBackToSampleOnAction" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="721.5622825622559" AnchorPane.topAnchor="521.0">
+         <image>
+            <Image url="@1024px-Back_Arrow.svg.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <Button layoutX="216.0" layoutY="421.0" mnemonicParsing="false" onAction="#handleTransferBtnOnAction" prefHeight="73.0" prefWidth="368.0" style="-fx-background-radius: 20;" text="Transfer" textFill="#426b9d">
+         <font>
+            <Font name="System Bold Italic" size="30.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+   </children>
+</AnchorPane>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: lightsteelblue;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ATMapp.controllers.SuccessController">
+   <children>
+      <Label alignment="CENTER" layoutX="126.0" layoutY="149.0" prefHeight="303.0" prefWidth="550.0" rotate="45.0" text="ATM" textFill="#2b804d72">
+         <font>
+            <Font name="System Italic" size="150.0" />
+         </font>
+         <effect>
+            <InnerShadow color="#ddbaba" />
+         </effect>
+      </Label>
+      <Label fx:id="showLabel" alignment="CENTER" layoutX="86.0" layoutY="152.0" prefHeight="45.0" prefWidth="629.0" text="Label">
+         <font>
+            <Font name="System Bold Italic" size="40.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="home" fitHeight="58.0" fitWidth="56.0" layoutX="14.0" layoutY="530.0" onMouseClicked="#handleHomeOnAction" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@1024px-Back_Arrow.svg.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <Label fx:id="showFinalBalanceLabel" alignment="CENTER" layoutX="45.0" layoutY="290.0" prefHeight="45.0" prefWidth="708.0" text="balance">
+         <font>
+            <Font name="System Italic" size="30.0" />
+         </font></Label>
+   </children>
+</AnchorPane>
